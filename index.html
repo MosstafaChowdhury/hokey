@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokeys</title>
+
+  <!-- google-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- daisyUl -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./style.css" rel="stylesheet"/>
+  
+  <!-- tailwindcss costom color -->
+  
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#FFF',
+              midnight: '#121063',
+              btn:"#FF4240",
+              dollar:"#FFC200"
+            }
+          }
+        }
+      }
+    </script>
+  <!-- font-awesome-kit -->
+  <script src="https://kit.fontawesome.com/b28bbd4631.js" crossorigin="anonymous"></script>
+  <style>
+      .font{
+          font-family: "Manrope", sans-serif;
+      }
+  </style>
+</head>
+<body>
+     <!-- header section -->
+     <header  class="container mx-auto px-2">
+        <div class="navbar my-5">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="text-[midnight]">Home</a></li>
+                  <li><a>service</a></li>
+                  <li><a>about</a></li>
+                  <li><a>product</a></li>
+                  <li>
+                
+           
+                  </li>
+           
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">Hokey's</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a> Home</a></li>
+               
+                <li><a class="">about </a></li>
+                <li><a class="">page </a></li>
+                <li><a>blog </a></li>
+                <li><a>content </a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class=" flex justify-center items-center ">
+                
+                <div class=" px-3 hidden lg:flex">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                </div>
+                    
+                    <button class="btn bg-btn py-3 px-10">Get Ticket</button>
+                </div>
+            </div>
+          </div> 
+
+          <!-- carosel -->
+        <div class="container mx-auto">
+            <div class=" carousel w-full rounded-lg ">
+                <div id="slide1" class="carousel-item   bg-[url(./Images/1.png)] bg-center bg-cover relative w-full h-[70vh] ">
+
+                  
+
+              
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+
+                </div> 
+
+                <div id="slide2" class="carousel-item relative w-full  bg-[url(./Images/2.png)] bg-center bg-cover h-[70vh]">
+
+                  
+
+              
+                  
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      
+                      <a href="#slide1" class="btn btn-circle">❮</a> 
+                      <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+  
+                  </div> 
+
+
+                <div id="slide3" class="carousel-item relative w-full  bg-[url(./Images/3.png)] bg-center bg-cover h-[70vh]">
+
+                  
+
+              
+                  
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      
+                      <a href="#slide2" class="btn btn-circle">❮</a> 
+                      <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+  
+                  </div> 
+               
+              
+              </div>
+
+        
+
+         </div>
+
+         <div class=" w-full  lg:w-2/4  bg-slate-600 py-12 lg:py-5 lg:absolute bottom-36 right-16 rounded-lg ">
+            <h3 class="text-2xl text-white text-center">Meet all the heroes from the field</h3>
+            <p class="text-center">
+                Something that's hokey is silly and sentimental 
+                you could also call it "sappy" or "mawkish." A hokey speech is more likely to make people roll
+                </p>
+                 </div>
+        </div>
+       
+       
+     </header>
+     <main class="container mx-auto p-2">
+        <!-- club progressbar -->
+     <section class="my-24 ">
+       
+        <div class="text-center py-5 space-y-6 ">
+            <hr class="border border-dotted">
+            <h2 class="text-4xl font-extrabold text-gray-800">Professional Hockeys Club</h2>
+            <p class="w-2/4 mx-auto text-1xl">
+               There is our hokeys team progress as you can see we have the best coach and also supporting hand for 24 hours
+            </p>
+                <hr class="border border-dotted ">
+        </div>
+        
+
+        <div class="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
+                   <div>
+                    <div class="card border-r-2 border-b-2  ">
+                        <div class="card-body ">
+                           <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#FF4240]" style="--value:77;" role="progressbar">77%</div>
+                           </div>
+                             <div class=" flex flex-col justify-center items-center">
+                                <h2 class="card-title">Prayer Facility</h2>
+                                <p class="text-center"> We provide best facility to our players as the can play well</p>
+                             </div>
+                          
+                        </div>
+                      </div>
+                   </div>
+                   <div>
+                    <div class="card   bg-white border-r-2 border-b-2">
+                        <div class="card-body ">
+                           <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#4C8DF1]" style="--value:82;" role="progressbar">82%</div>
+                           </div>
+                             <div class=" flex flex-col justify-center items-center">
+                                <h2 class="card-title">Experienced Coach</h2>
+                                <p class="text-center"> 
+                                    There are 5 coach in our club all of them are very experienced
+
+                                </p>
+                             </div>
+                          
+                        </div>
+                      </div>
+                   </div>
+                   <div>
+                    <div class="card   bg-white border-r-2 border-b-2">
+                        <div class="card-body ">
+                           <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#FFB546]" style="--value:87;" role="progressbar">87%</div>
+                           </div>
+                             <div class=" flex flex-col justify-center items-center">
+                                <h2 class="card-title">Senior Playe</h2>
+                                <p class="text-center"> 
+                                    We have lot's of senior player who playing for national club
+                                </p>
+                             </div>
+                          
+                        </div>
+                      </div>
+                   </div>
+                   <div>
+                    <div class="card   bg-white border-r-2 border-b-2">
+                        <div class="card-body ">
+                           <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#49D293]" style="--value:93;" role="progressbar">93%</div>
+                           </div>
+                             <div class=" flex flex-col justify-center items-center">
+                                <h2 class="card-title">Training Ground</h2>
+                                <p class="text-center">
+                                   We have 3 ground for training for our players
+
+                                </p>
+                             </div>
+                          
+                        </div>
+                      </div>
+                   </div>
+        </div>
+     </section>
+
+
+     <section class="my-24">
+
+
+        
+        <div class="text-center py-5 space-y-6">
+            <hr class="border border-dotted">
+            <h2 class="text-4xl  font-extrabold text-gray-800">Program Sections</h2>
+            <p class="lg:w-2/4 mx-auto text-1xl">
+                From us you get the highest quality service and with the best quality hockey sticks and Coach facility for all time
+            </p>
+                <hr class="border border-dotted">
+        </div>
+       
+
+         <div  class=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-5 mt-10 ">
+             
+                
+                <div class=" col-span-1 relative bg-gradient-to-r from-black  to-black rounded-lg w-full  h-[100%] ">
+
+                    <img src="./Images/2.png" class=" rounded-lg bg-cover  object-cover w-full  h-[100%]  " />
+
+                  
+                      <div class="absolute top-0  flex  justify-start items-center  rounded-lg h-[100%] w-full  ">
+                        <div class=" lg:space-y-5 pl-10">
+                            <h3 class="text-2xl text-white">Junior Program</h3>
+                            <p class=" py-2 lg:w-3/4 text-white">
+                                Through junior program we start imparting education
+                                 from the very zero level and help them further to make them proficient.
+                                </p>
+                                 <button class="btn bg-btn py-3 px-10 text-white text-1xl">Register</button>
+                         </div>
+                      </div>
+                </div>
+
+           <div class="col-span-1 relative linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))">
+                   <img src="./Images/3.png"   class="bg-cover  object-cover w-full  h-[100%] "/>
+                  
+                   
+                   <div class="absolute top-0  flex  justify-start items-center   h-[100%] w-full from-indigo-100  to-pink-100  ">
+                    <div class="lg:space-y-5 pl-10">
+                        <h3 class="text-2xl text-teal-50">Teenager Program</h3>
+                        <p class="py-2 lg:w-3/4 text-white">
+                            One of our training sessions is for seniors and juniors who play 
+                            sports together and bring out the best in each other.
+                            </p>
+                             <button class="btn bg-btn py-3 px-10 text-white text-1xl">Register</button>
+                     </div>
+                  </div>
+
+             
+           </div>
+           
+           
+            <div class="lg:col-span-2 relative bg-gradient-to-tr from-red-600 to-green-700  h-[244px] lg:h-[100%]  ">
+                     <img src="./Images/4.png"  class=" object-cover bg-cover bg-center w-full h-[100%] from-indigo-500  to-pink-100 "/>
+                    
+                     
+                     <div class="absolute top-0 flex  justify-start items-center   h-[100%] w-full from-indigo-600  to-pink-100  ">
+                        <div class="lg:space-y-5  pl-10 ">
+                            <h3 class="text-2xl text-white ">Professional Program</h3>
+                            <p class=" py-2 lg:w-2/4 text-white">
+                                And we have one of the major sections who are professionals who are well trained under the coach under
+                                By this way they feel interest 
+                                </p>
+                                 <button class="btn bg-btn py-3 px-10 text-white text-1xl">Register</button>
+                         </div>
+                      </div>
+
+            </div>
+
+         </div>
+     </section>
+
+
+     <!-- products  -->
+
+
+     <section class="my-24 ">
+                
+        <div class="text-center py-5 space-y-6">
+            <hr class="border border-dotted">
+            <h2 class="text-4xl  font-extrabold text-gray-800">Our New Products</h2>
+            <p class="w-2/4 mx-auto text-1xl">
+                You are getting the best and most attractive products in the world
+                That product is more attractive to you
+            </p>
+                <hr class="border border-dotted">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+
+              <div class="flex flex-col lg:flex-row bg-white p-4 rounded-lg border border-1">
+                     <!-- card img -->
+                     <div class="rounded-lg ">
+                            <img src="./Images/5.png" alt="Football" class=" rounded-lg h-[230px] w-full object-cover bg-cover bg-center bg-no-repeat p-3 "/>
+                     </div>
+                  
+                     <!-- card content -->
+                     <div class="pl-6 flex flex-col justify-around " >
+                        <div class="space-x-6 pt-2">
+                                  
+                            <span>
+                          <i class="fa-regular fa-star text-amber-400"></i>
+                          <small>5.0</small>
+                         </span>   
+                         <span>
+                          <i class="fa-solid fa-eye text-red-400"></i>
+                          <small>20</small>
+                         </span>
+                         <span>
+                          <i class="fa-regular fa-heart text-red-900"></i>
+                          <small>200</small>
+                         </span>
+                       
+                  </div>
+                            <div >
+                                  <h4 class="py-2 text-2xl font-extrabold text-red-400">Versity Jacket</h4>
+                                  <p class="pb-3 lg:w-3/4">Most demandable jacket of this season this jacket is too  </p>
+                            </div>
+                            <div class=" space-y-2 lg:flex justify-between items-center">
+                                  <h2 class="text-slate-800 text-1xl font-extralight">Price - <span class="text-dollar text-xl">$</span>22.00</h2>
+                                  <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-cart-shopping text-yellow-600"></i>
+                                    <small>Delivery Fee : Free</small>
+                                  </div>
+                            </div>
+                     </div>
+              </div>
+              <div class="flex flex-col lg:flex-row bg-white p-4 rounded-lg border border-1">
+                     <!-- card img -->
+                     <div class="flex justify-center items-center">
+                            <img src="./Images/6.png" alt="Football" class="h-[220px] w-full
+                            object-cover bg-cover bg-center bg-no-repeat p-3  rounded-lg"/>
+                     </div>
+                  
+                     <!-- card content -->
+                     <div class="pl-6  flex flex-col justify-around " >
+                        <div class="space-x-6 pt-2">
+                                  
+                            <span>
+                          <i class="fa-regular fa-star text-amber-400"></i>
+                          <small>5.0</small>
+                         </span>   
+                         <span>
+                          <i class="fa-solid fa-eye text-red-400"></i>
+                          <small>20</small>
+                         </span>
+                         <span>
+                          <i class="fa-regular fa-heart text-red-900"></i>
+                          <small>200</small>
+                         </span>
+                       
+                  </div>
+                            <div >
+                                  <h4 class="py-2 text-2xl font-extrabold">World Cup Footbal</h4>
+                                  <p class="pb-3 lg:w-3/4">
+                                    world cup flag is collected by national team is been 
+                                  </p>
+                            </div>
+                            <div class="space-y-2 lg:flex justify-between items-center">
+                                  <h2 class="text-slate-800 text-1xl font-extralight">Price - <span class="text-dollar text-xl">$</span>22.00</h2>
+                                  <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-cart-shopping text-yellow-600"></i>
+                                    <small>Delivery Fee : Free</small>
+                                  </div>
+                            </div>
+                     </div>
+
+              </div>
+              <div class="flex flex-col lg:flex-row bg-white p-4 rounded-lg border border-1">
+                     <!-- card img -->
+                     <div class="flex justify-center items-center">
+                            <img src="./Images/7.png" alt="Football" class="h-[220px] w-full
+                            object-cover bg-cover bg-center bg-no-repeat p-3 rounded-lg"/>
+                     </div>
+                  
+                     <!-- card content -->
+                     <div class="pl-6  flex flex-col justify-around " >
+                        <div class="space-x-6 pt-2">
+                                  
+                            <span>
+                          <i class="fa-regular fa-star text-amber-400"></i>
+                          <small>5.0</small>
+                         </span>   
+                         <span>
+                          <i class="fa-solid fa-eye text-red-400"></i>
+                          <small>20</small>
+                         </span>
+                         <span>
+                          <i class="fa-regular fa-heart text-red-900"></i>
+                          <small>200</small>
+                         </span>
+                       
+                  </div>
+                            <div >
+                                  <h4 class="py-2 text-2xl font-extrabold">Dashing cup</h4>
+                                  <p class="pb-3 lg:w-3/4">Imported Chinese cap for make your self more dashing </p>
+                            </div>
+                            <div class=" space-y-2 lg:flex justify-between items-center">
+                                  <h2 class="text-slate-800 text-1xl font-extralight">Price - <span class="text-dollar text-xl">$</span>22.00</h2>
+                                  <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-cart-shopping text-yellow-600"></i>
+                                    <small>Delivery Fee : Free</small>
+                                  </div>
+                            </div>
+                     </div>
+
+              </div>
+              <div class="flex flex-col lg:flex-row bg-white p-4 rounded-lg border border-1">
+                     <!-- card img -->
+                     <div class="flex justify-center items-center">
+                            <img src="./Images/8.png" alt="Football" class="h-[220px] w-full
+                            object-cover bg-cover bg-center bg-no-repeat p-3  rounded-lg"/>
+                     </div>
+                  
+                     <!-- card content -->
+                     <div class="pl-6 flex flex-col justify-around  " >
+                        <div class="space-x-6 pt-2">
+                                  
+                            <span>
+                          <i class="fa-regular fa-star text-amber-400"></i>
+                          <small>5.0</small>
+                         </span>   
+                         <span>
+                          <i class="fa-solid fa-eye text-red-400"></i>
+                          <small>20</small>
+                         </span>
+                         <span>
+                          <i class="fa-regular fa-heart text-red-900"></i>
+                          <small>200</small>
+                         </span>
+                       
+                  </div>
+                            <div >
+                                  <h4 class="py-2 text-2xl font-extrabold">Thai t-shar</h4>
+                                  <p class="pb-3 lg:w-3/4"> thai t-shart also a product that give you comfort to ware</p>
+                            </div>
+                            <div class=" space-y-2 lg:flex justify-between items-center">
+                                  <h2 class="text-slate-800 text-1xl font-extralight">Price - <span class="text-dollar text-xl">$</span>22.00</h2>
+                                  <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-cart-shopping text-yellow-600"></i>
+                                    <small>Delivery Fee : Free</small>
+                                  </div>
+                            </div>
+                     </div>
+
+              </div>
+              <div class="flex flex-col lg:flex-row bg-white p-4 rounded-lg border border-1">
+                     <!-- card img -->
+                     <div class="flex justify-center items-center">
+                            <img src="./Images/9.png" alt="Football" class="h-[220px] w-full
+                            object-cover bg-cover bg-center bg-no-repeat p-3  rounded-lg"/>
+                     </div>
+                  
+                     <!-- card content -->
+                     <div class="pl-6 flex flex-col justify-around  " >
+                        <div class="space-x-6 pt-2">
+                                  
+                            <span>
+                          <i class="fa-regular fa-star text-amber-400"></i>
+                          <small>5.0</small>
+                         </span>   
+                         <span>
+                          <i class="fa-solid fa-eye text-red-400"></i>
+                          <small>20</small>
+                         </span>
+                         <span>
+                          <i class="fa-regular fa-heart text-red-900"></i>
+                          <small>200</small>
+                         </span>
+                       
+                  </div>
+                            <div >
+                                  <h4 class="py-2 text-2xl font-extrabold">World Cup Helmate</h4>
+                                  <p class="pb-3 lg:w-3/4"> World cup halmate it only one pics  </p>
+                            </div>
+                            <div class="space-y-2 lg:flex justify-between items-center">
+                                  <h2 class="text-slate-800 text-1xl font-extralight">Price - <span class="text-dollar text-xl">$</span>22.00</h2>
+                                  <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-cart-shopping text-yellow-600"></i>
+                                    <small>Delivery Fee : Free</small>
+                                  </div>
+                            </div>
+                     </div>
+
+              </div>
+              <div class="flex flex-col lg:flex-row bg-white p-4 rounded-lg border border-1">
+                     <!-- card img -->
+                     <div class="flex justify-center items-center">
+                            <img src="./Images/10.png" alt="Football" class="h-[220px] w-full
+                            object-cover bg-cover bg-center bg-no-repeat p-3  rounded-lg"/>
+                     </div>
+                  
+                     <!-- card content -->
+                     <div class="pl-6  flex flex-col justify-around " >
+                        <div class="space-x-6 pt-2">
+                                  
+                            <span>
+                          <i class="fa-regular fa-star text-amber-400"></i>
+                          <small>5.0</small>
+                         </span>   
+                         <span>
+                          <i class="fa-solid fa-eye text-red-400"></i>
+                          <small>20</small>
+                         </span>
+                         <span>
+                          <i class="fa-regular fa-heart text-red-900"></i>
+                          <small>200</small>
+                         </span>
+                       
+                  </div>
+                            <div >
+                                  <h4 class="py-2 text-2xl font-extrabold"> Football</h4>
+                                  <p class="pb-3 lg:w-3/4">Football is all of veraities both normal & good quality</p>
+                            </div>
+                            <div class="space-y-2 lg:flex justify-between items-center">
+                                  <h2 class="text-slate-800 text-1xl font-extralight">Price - <span class="text-dollar text-xl">$</span>22.00</h2>
+                                  <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-cart-shopping text-yellow-600"></i>
+                                    <small>Delivery Fee : Free</small>
+                                  </div>
+                            </div>
+                     </div>
+              </div>
+
+           
+            
+              
+
+         </div>
+
+        </div>
+     </section>
+
+     <section class="my-24">
+                     
+        <div class="text-center py-5 space-y-6">
+            <hr class="border border-dotted">
+            <h2 class="text-4xl  font-extrabold text-gray-800">Clients question</h2>
+            <p class="w-2/4 mx-auto text-1xl">
+                Below are some questions that you may include in your questions, covering your general questions
+            </p>
+                <hr class="border border-dotted">
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 border p-3 mt-10 ">
+             <div>
+                    <img src="./Images/11.png"/>
+             </div>
+             <div class=" pt-3 lg:pt-0 lg:col-span-2  lg:pl-6 flex justify-center items-center">
+                
+                <div class="join join-vertical w-full">
+
+                    <div class="collapse collapse-arrow join-item border">
+                        <input type="radio" name="my-accordion-4" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Our equipment. Discover a complete range of innovative fluid distribution equipment designed to meet the needs of the electronics industry</p>
+                        </div>
+                      </div>
+                    <div class="collapse collapse-arrow join-item border ">
+                        <input type="radio" name="my-accordion-4" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Our hockey training runs seven days a week from 10am to 5pm and until 3pm on all other days except Fridays.</p>
+                        </div>
+                      </div>
+                    <div class="collapse collapse-arrow join-item border">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Private Lessons
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>Our private lessons take place one Friday a week from 7am to 5pm</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Ski Touring
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>At Ski Training we provide hockey as well as physical and mental training</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                       Booking
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>You can contact us on the given number or email for booking</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                    Pricing
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>Our training has various prizes which are of three month duration and 9 month duration</p>
+                      </div>
+                    </div>
+                 
+
+                  </div>
+             </div>
+        </div>
+     </section>
+
+     <section  class="my-24 ">
+        <div class="text-center py-5 space-y-6">
+            <hr class="border border-dotted">
+            <h2 class="text-4xl  font-extrabold text-gray-800">Get in Tuch</h2>
+            <p class="w-2/4 mx-auto text-1xl">
+                message us now to know all your opinions and other things you want to know 
+            </p>
+                <hr class="border border-dotted">
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 mt-10">
+                    <div class="grid grid-cols-1 gap-3 mb-6 border border-blue-100 border-1 p-3 ">
+                         <div class="flex flex-col justify-center items-start pl-10  w-full h-[220px] bg-gradient-to-r from-indigo-100 to-sky-100 rounded-lg">
+                                 <img src="./Images/Group 1171275317.png"/>
+                                 <h2 class="py-2 text-gray-400">phone number</h2>
+                                 <h2>0929628235</h2>
+                         </div>
+                         <div class="  flex flex-col justify-center items-start pl-10 w-full h-[220px] bg-gradient-to-r from-blue-100 to-gray-100 rounded-lg" >
+                            <img src="./Images/Group 1171275318.png"/>
+                            <h2 class="py-2 text-gray-400">email</h2>
+                            <h2>msgt@gmail.com</h2>
+                         </div>
+                         <div  class="  flex flex-col justify-center items-start pl-10  w-full h-[220px]  bg-gradient-to-r from-red-100 to-orange-100 rounded-lg">
+                            <img src="./Images/Group 1171275321.png"/>
+                            <h2 class="py-2 text-gray-400">Locations</h2>
+                            <h2>Dhaka,1202</h2>
+                         </div>
+                    </div>
+
+                    <div class="lg:col-span-2  lg:pl-10">
+
+                            <div class="grid lg:grid-cols-2 gap-4">
+                                                 
+                             
+
+                                <div>
+                                            
+                                    <label for="" class="text-1xl "> Frist Name</label>
+                                    <input type="text" placeholder="Frist Name" class=" my-2 rounded-lg py-3 px-2 outline-none border-none w-full bg-gray-200"/>
+                                    
+                                     </div>
+                                <div>
+                                            
+                                    <label for="" class="text-1xl ">Last Name</label>
+                                    <input type="text" placeholder="Last Name" class=" my-2 rounded-lg py-3 px-2 outline-none border-none w-full bg-gray-200"/>
+                                    
+                                     </div>
+                                <div>
+                                            
+                                    <label for="" class="text-1xl ">Subjecr</label>
+                                    <input type="text" placeholder="Subject " class=" my-2 rounded-lg py-3 px-2 outline-none border-none w-full bg-gray-200"/>
+                                    
+                                     </div>
+                                <div>
+                                            
+                                    <label for="" class="text-1xl ">Phone Number </label>
+                                    <input type="text" placeholder="Phone Number" class=" my-2 rounded-lg py-3 px-2 outline-none border-none w-full bg-gray-200"/>
+                                    
+                                     </div>
+                            </div>
+
+                                        
+                                         
+                                          
+                            
+                            
+
+                                    
+                                  
+                              
+                                  <div class="">
+                                    <label class="form-control">
+                                        <div class="label">
+                                          <span class="label-text">Message</span>
+                                         
+                                        </div>
+                                        <textarea class="textarea textarea-bordered h-[360px] mb-16" placeholder="type your message"></textarea>
+                                        
+                                      </label>
+                                      <button class="btn bg-btn py-3 px-10 w-full">Get Ticket</button>
+
+                                  </div>
+                             
+
+                        
+
+                        
+                           
+                    </div>
+        </div>
+
+        <div class="mt-3 py-6  text-center space-y-6 bg-gray-100">
+   
+            <h2 class="text-3xl   text-gray-800">social media </h2>
+            <div class=" flex justify-center items-center  space-x-5">
+                <i class="fa-brands fa-facebook-f text-white bg-blue-600 p-3  rounded-lg"></i>
+                <i class="fa-brands fa-instagram   text-red-600 bg-amber-400 p-3  rounded-lg"></i>
+                <i class="fa-brands fa-twitter   text-blue-600 bg-indigo-400 p-3  rounded-lg"></i>
+                <i class="fa-brands fa-linkedin  text-white  bg-sky-500 p-3 rounded-lg"></i>
+            </div>
+             
+        </div>
+     </section>
+     </main>
+
+     <footer class="bg-black">
+            <div class="container mx-auto ">
+                <div class="bg-black grid grid-cols-1 lg:grid-cols-4 py-20 gap-5">
+                     <div class="  items-center lg:col-span-2 lg:justify-start">
+                         <div class="  flex flex-col justify-center items-center ">
+                            <div class="flex flex-col justify-center items-center">
+                                <h2 class="text-2xl font-extrabold text-white py-2">Get In Touch</h2>
+                                <p class="lg:w-3/4 pb-2 mx-auto text-center lg: text-gray-500">
+                                    To contact us please contact us on our given email and phone number and our address is Dhaka : 1202 mg.
+
+                              </p>
+                              </div>
+                              <div>
+                                 <div class="py-1 flex items-center">
+                                    <i class="fa-solid fa-phone text-2xl text-red-600"></i>
+                                    <small class="pl-2 text-gray-400">+7182251725</small>
+                                 </div>
+                                 <div class="py-1 flex items-center">
+                                    <i class="fa-solid fa-envelope text-2xl text-red-600"></i>
+                                    <small class="pl-2 text-gray-400">a2z@gmail.com</small>
+                                 </div>
+                              </div>
+                         </div>
+                     </div>
+                    
+                        <div class="grid grid-cols-2">
+                            <div class=" flex justify-center lg:justify-start ">
+                                <div>
+                                   <h2 class="text-2xl font-extrabold text-white py-2">company</h2>
+                                   <h2 class="text-1xl  text-gray-400 pb-1">about us</h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">leadership </h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">products</h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">service</h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">features</h2>
+                                </div>
+                            </div>
+                            <div class=" flex justify-center lg:justify-start">
+                               <div>
+                                   <h2 class="text-2xl font-extrabold text-white py-2">support</h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">help center</h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">FAq </h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">Ticket SUpport</h2>
+                                   <h2 class="text-1xl  text-gray-400  pb-1">contact us</h2>
+                               
+                                </div>
+                            </div>
+                        </div>
+                    
+                     <div class=" flex justify-center lg:justify-start">
+                        <div>
+                            <h2 class="text-2xl font-extrabold text-white py-2">service</h2>
+                            <h2 class="text-1xl  text-gray-400  pb-1">Accademy</h2>
+                            <h2 class="text-1xl  text-gray-400  pb-1">Group Lesson </h2>
+                            <h2 class="text-1xl  text-gray-400  pb-1">Private Lesson</h2>
+                            <h2 class="text-1xl  text-gray-400 pb-1">Hokey for kid's</h2>
+                            <h2 class="text-1xl  text-gray-400  pb-1">Hokey for adult's</h2>
+                        
+                         </div>
+                     </div>
+
+                     
+                </div>
+
+            </div>
+     </footer>
+</body>
+</html>
+
+
+<!-- bg[linear-gradient(rgba(19, 19, 24, 0.50))] -->
